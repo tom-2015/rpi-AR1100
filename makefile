@@ -7,7 +7,7 @@ LINK=-L/usr/lib -L/usr/local/lib -lpthread `pkg-config --libs libusb-1.0` `pkg-c
 #compiler command
 CXX=g++ 
 #compiler flags
-CXXFLAGS = -DAPP_VERSION="3.0" $(INCL)
+CXXFLAGS = -DAPP_VERSION="1.0" $(INCL)
 
 #debugging or not (make DEBUG=1)
 ifeq (1,$(DEBUG))
