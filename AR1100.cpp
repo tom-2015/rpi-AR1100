@@ -105,7 +105,8 @@ int AR1100::read_data(unsigned char * data, int data_count, int * bytes_read, in
             }
             printf("\n");
         }
-    #endif    
+    #endif   
+    return result;
 }
 
 //clears all waiting in USB packets
