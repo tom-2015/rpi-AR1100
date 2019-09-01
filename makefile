@@ -25,7 +25,7 @@ all: $(APPNAME)
 
 # link
 $(APPNAME): $(OBJS)
-	$(CXX) $(CXXFLAGS) $(LINK) $(OBJS) -o $(APPNAME)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(APPNAME) $(LINK)
 
 # pull in dependency info for *existing* .o files
 -include $(OBJS:.o=.d)
