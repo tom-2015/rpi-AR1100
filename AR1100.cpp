@@ -182,7 +182,7 @@ bool AR1100::calibrate(unsigned char type){
 bool AR1100::calibrate_next_point(){
     AR1100_response_packet response;
     int bytes_read;
-    int result = read_data((unsigned char *) & response, sizeof(response), & bytes_read, 5);
+    int result = read_data((unsigned char *) & response, sizeof(response), & bytes_read, 50);
     if (result==0 && bytes_read>0){
         #ifdef DEBUG
             printf("Next point: %d\n", response.status);
